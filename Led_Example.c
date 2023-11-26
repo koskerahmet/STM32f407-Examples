@@ -13,12 +13,12 @@ int main(void)
   while (1)
   {
         // PD12, PD13, PD14, PD15 Pins HIGH
-   	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_SET);  //
+   	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_SET);
      	HAL_Delay(1000); // 1 Second Delay
 	
 	// PD12, PD13, PD14, PD15 Pins LOW
-     	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_RESET); //Ledlerin Pinlerini LOW Yapmak
-     	HAL_Delay(2000); // 1 Second Delay
+     	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_RESET);
+     	HAL_Delay(1000); // 1 Second Delay
   }
 }
 
